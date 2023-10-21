@@ -18,7 +18,7 @@ def list_iam_policies():
     # Declare a variable for the created IAM client
     client = boto3.client('iam')
 
-    # Declare a variable that stores the list of IAM policies to be used later
+    # Declare a variable that stores the dictionary of IAM policies to be used later
     response = client.list_policies()
 
     # Declare a variable that will store the extracted list of policies from the IAM policies,
@@ -55,7 +55,7 @@ def write_policies_to_csv(policies, csv_filename):
                 # FORMAT:
                 # <csv_header_names>:
                 # <policy is each element in the list policies>
-                # [<For each element, grab the value of the corresponding field name in the policies list>]
+                # [<For each element, grab the value of the corresponding value of the associated key from the policies dictionary>]
                 'Policy Name': policy['PolicyName'],
                 'PolicyId': policy['PolicyId'],
                 'Arn': policy['Arn']
