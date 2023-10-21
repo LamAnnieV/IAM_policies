@@ -60,11 +60,7 @@ def write_policies_to_csv(policies, csv_filename):
             })
 
 
-##############################################################################
-
-##############################CALL THE fUNCTION#############################
-
-
+############### C A L L - T H E - F U N C T I O N ###############
 
 if __name__ == "__main__":
     # Call the list_iam_policies function to retrieve IAM policies
