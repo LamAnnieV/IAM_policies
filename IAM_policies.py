@@ -28,7 +28,7 @@ def list_iam_policies():
     return policies
 
 
-#########################################################
+############### F U N C T I O N - T O - W R I T E - I A M - P O L I C I E S - T O - F I L E ###############
 
 def write_policies_to_csv(policies, csv_filename):
 
